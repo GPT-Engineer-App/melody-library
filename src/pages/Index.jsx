@@ -54,7 +54,7 @@ const Index = () => {
       <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap={8}>
         {filteredAlbums.map((album) => (
           <Box key={album.id} borderWidth={1} borderRadius="lg" overflow="hidden" cursor="pointer" onClick={() => openAlbumModal(album)}>
-            <Image src={album.cover} alt={album.title} w="200px" h="200px" objectFit="cover" />
+            <Image src={album.cover} alt={album.title} w="100%" h="200px" objectFit="cover" />
             <Box p={4}>
               <Heading as="h2" size="md" mb={2}>
                 {album.title}
