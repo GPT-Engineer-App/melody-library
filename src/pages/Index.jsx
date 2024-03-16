@@ -65,6 +65,13 @@ const Index = () => {
         ))}
       </Grid>
 
+      <Box mt={12}>
+        <Heading as="h2" size="xl" mb={4}>
+          About Us
+        </Heading>
+        <Text>Welcome to our music library! We are passionate about curating and sharing a diverse collection of albums from various artists. Explore our library, discover new music, and immerse yourself in the world of melodies and rhythms.</Text>
+      </Box>
+
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
