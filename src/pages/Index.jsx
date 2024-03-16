@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Box, Heading, Text, Input, Button, Grid, Image, IconButton, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
+import { Box, Heading, Text, Input, Button, Grid, Image, IconButton, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, HStack } from "@chakra-ui/react";
+import Logo from "../assets/logo.png";
 import { FaPlay, FaPause, FaSearch, FaMusic, FaGuitar, FaMicrophone, FaDrum, FaHeadphones, FaTape } from "react-icons/fa";
 
 const musicIcons = [
@@ -56,9 +57,12 @@ const Index = () => {
 
   return (
     <Box p={8}>
-      <Heading as="h1" size="2xl" mb={8}>
-        Music Library
-      </Heading>
+      <HStack mb={8}>
+        <Image src={Logo} alt="Music Library Logo" boxSize="50px" mr={4} />
+        <Heading as="h1" size="2xl">
+          Music Library
+        </Heading>
+      </HStack>
       <Input placeholder="Search albums..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} mb={8} />
       <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap={8}>
         {filteredAlbums.map((album) => (
