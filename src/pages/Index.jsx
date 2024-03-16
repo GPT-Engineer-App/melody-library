@@ -109,7 +109,7 @@ const Index = () => {
         </Heading>
         <Grid templateColumns="repeat(6, 1fr)" gap={8}>
           {musicIcons.map(({ icon: Icon, text }, index) => (
-            <Box key={index} display="flex" flexDirection="column" alignItems="center">
+            <Box key={index} display="flex" flexDirection="column" alignItems="center" p={4} borderRadius="md" bgGradient="linear(to-br, gray.100, gray.300)" boxShadow="md">
               <Icon size="48px" color="blue.500" />
               <Text mt={2}>{text}</Text>
             </Box>
