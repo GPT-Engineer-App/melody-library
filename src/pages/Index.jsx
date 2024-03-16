@@ -17,7 +17,20 @@ const albums = [
     cover: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGFsYnVtJTIwYXJ0d29ya3xlbnwwfHx8fDE3MTA1NjM5MjB8MA&ixlib=rb-4.0.3&q=80&w=1080",
     tracks: ["Track 1", "Track 2", "Track 3"],
   },
-  // Add more albums...
+  {
+    id: 3,
+    title: "Album 3",
+    artist: "Artist 3",
+    cover: "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwyfHxtdXNpYyUyMGFsYnVtJTIwY292ZXJ8ZW58MHx8fHwxNzEwNDI5MjYyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+    tracks: ["Track 1", "Track 2", "Track 3", "Track 4"],
+  },
+  {
+    id: 4,
+    title: "Album 4",
+    artist: "Artist 4",
+    cover: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwzfHxtdXNpYyUyMGFsYnVtJTIwY292ZXJ8ZW58MHx8fHwxNzEwNDI5MjYyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+    tracks: ["Track 1", "Track 2", "Track 3", "Track 4", "Track 5"],
+  },
 ];
 
 const Index = () => {
