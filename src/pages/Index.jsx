@@ -116,6 +116,15 @@ const Index = () => {
           ))}
         </Grid>
       </Box>
+      <Box position="relative" mt={12}>
+        <Image src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGFsYnVtJTIwY292ZXJ8ZW58MHx8fHwxNzEwNDI5MjYyfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Music Library Ad" w="100%" h="400px" objectFit="cover" />
+        <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" bg="rgba(0, 0, 0, 0.6)" p={8} color="white" textAlign="center">
+          <Heading as="h2" size="2xl" mb={4}>
+            Discover Your Next Favorite Album
+          </Heading>
+          <Text fontSize="xl">Explore our vast collection of music and find your perfect soundtrack.</Text>
+        </Box>
+      </Box>
     </Box>
   );
 };
