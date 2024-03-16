@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { Box, Heading, Text, Input, Button, Grid, Image, IconButton, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
-import { FaPlay, FaPause, FaSearch } from "react-icons/fa";
+import { FaPlay, FaPause, FaSearch, FaMusic, FaGuitar, FaMicrophone, FaDrum, FaHeadphones, FaTape } from "react-icons/fa";
+
+const musicIcons = [
+  { icon: FaMusic, text: "All Music" },
+  { icon: FaGuitar, text: "Guitar" },
+  { icon: FaMicrophone, text: "Vocals" },
+  { icon: FaDrum, text: "Drums" },
+  { icon: FaHeadphones, text: "Headphones" },
+  { icon: FaTape, text: "Cassette" },
+];
 
 const albums = [
   {
@@ -93,6 +102,20 @@ const Index = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+
+      <Box mt={12}>
+        <Heading as="h2" size="xl" mb={4}>
+          Explore Music
+        </Heading>
+        <Grid templateColumns="repeat(6, 1fr)" gap={8}>
+          {musicIcons.map(({ icon: Icon, text }, index) => (
+            <Box key={index} textAlign="center">
+              <Icon size="48px" color="blue.500" />
+              <Text mt={2}>{text}</Text>
+            </Box>
+          ))}
+        </Grid>
+      </Box>
     </Box>
   );
 };
